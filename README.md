@@ -6,8 +6,9 @@ Golden Touchstone is a simple, effective, and systematic benchmark for bilingual
 
 [Golden Touchstone Benchmark](https://huggingface.co/datasets/IDEA-FinAI/Golden-Touchstone)
 
-![TouchStone-GPT-logo](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/Touchstone-GPT-logo.png)
-[Model Weight](https://huggingface.co/IDEA-FinAI/TouchstoneGPT-7B-Instruct/)
+
+
+[![Model Weight](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/Touchstone-GPT-logo.png)](https://huggingface.co/IDEA-FinAI/TouchstoneGPT-7B-Instruct/)
 
 
 ## Evaluation
