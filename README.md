@@ -25,6 +25,6 @@ __output_dir__ indicates the path of all the data set task results you want to o
 
 After specifying these three address variables, use
 ```python
-python evaluate.py
+python evaluate_all.py
 ```
 to find all the evaluation results in the output_dir
