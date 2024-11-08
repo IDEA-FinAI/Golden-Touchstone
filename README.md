@@ -10,7 +10,7 @@ Golden Touchstone is a simple, effective, and systematic benchmark for bilingual
 [Model Weight](https://huggingface.co/IDEA-FinAI/TouchstoneGPT-7B-Instruct/)
 
 
-## Evalation
+## Evaluation
 ### Quick Inference Use
 Our inference is based on the llama-factory framework, and eval_benchmark.sh is our reasoning script. Register the template and dataset in llama-factory, and download the specified open source model before you can use it.
 
