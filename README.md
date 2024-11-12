@@ -1,42 +1,34 @@
+<!-- markdownlint-disable first-line-h1 -->
+<!-- markdownlint-disable html -->
+<!-- markdownlint-disable no-duplicate-header -->
+
+<div align="center">
+  <img src="https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/Touchstone-GPT-logo.png?raw=true" width="15%" alt="Golden-Touchstone" />
+  <h1 style="display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 2em; font-weight: bold;">Golden-Touchstone Benchmark</h1>
+</div>
+
+<div align="center" style="line-height: 1;">
+  <a href="https://arxiv.org/abs/2411.06272" target="_blank" style="margin: 2px;">
+    <img alt="arXiv" src="https://img.shields.io/badge/Arxiv-2411.06272-b31b1b.svg?logo=arXiv" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://github.com/IDEA-FinAI/Golden-Touchstone" target="_blank" style="margin: 2px;">
+    <img alt="github" src="https://img.shields.io/github/stars/IDEA-FinAI/Golden-Touchstone.svg?style=social" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://huggingface.co/IDEA-FinAI/TouchstoneGPT-7B-Instruct" target="_blank" style="margin: 2px;">
+    <img alt="datasets" src="https://img.shields.io/badge/🤗-Datasets-yellow.svg" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://huggingface.co/IDEA-FinAI/TouchstoneGPT-7B-Instruct" target="_blank" style="margin: 2px;">
+    <img alt="huggingface" src="https://img.shields.io/badge/🤗-Model-yellow.svg" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+</div>
+
 # Golden-Touchstone
 
 
 Golden Touchstone is a simple, effective, and systematic benchmark for bilingual (Chinese-English) financial large language models, driving the research and implementation of financial large language models, akin to a touchstone. We also have trained and open-sourced Touchstone-GPT as a baseline for subsequent community research.
 
+## Evaluation of Touchstone Benchmark
 
-
-[Golden Touchstone Benchmark](https://huggingface.co/datasets/IDEA-FinAI/Golden-Touchstone)
-
-
-
-[![Model Weight](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/Touchstone-GPT-logo.png)](https://huggingface.co/IDEA-FinAI/TouchstoneGPT-7B-Instruct/)
-
-## Introduction
-Below is the information of the open source benchmarks cited in this work
-|  Date  | Name |      Author       |    Institute    | Links  | Paper
-| :-----: | :-----: | :------------------: | :--------------: | :--------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 
-| 2023-05~2024-03 | Xuanyuan 1&2 <br/>(轩辕) | Zhang X, Yang Q.  | Duxiaoman Co., China<br/>(度小满) |[![arXiv](https://img.shields.io/badge/Arxiv-2305.12002-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2305.12002)[![github](https://img.shields.io/github/stars/Duxiaoman-DI/XuanYuan.svg?style=social)](https://github.com/Duxiaoman-DI/XuanYuan)[![huggingface](https://img.shields.io/badge/🤗-Model%206B~70B-yellow.svg)](https://huggingface.co/Duxiaoman-DI/XuanYuan2-70B-Chat) |XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters |
-| 2023-11 | CFBenchmark | Yang Lei, Li J, et al. | TongjiFinLab & Shanghai AI Lab, China<br/>(同济大学网络金融安全协同创新中心与上海人工智能实验室联合团队) | [![arXiv](https://img.shields.io/badge/Arxiv-2311.05812-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.05812)[![github](https://img.shields.io/github/stars/TongjiFinLab/CFBenchmark.svg?style=social)](https://github.com/TongjiFinLab/CFBenchmark)[![huggingface](https://img.shields.io/badge/🤗-Model%207B-yellow.svg)](https://huggingface.co/TongjiFinLab/CFGPT1-sft-7B-Full) | CFBenchmark: Chinese Financial Assistant Benchmark for Large Language Model |
-| 2023-08 | FinEval | Liwen Zhang, et al. | Shanghai University of Finance and Economics | [![arXiv](https://img.shields.io/badge/Arxiv-2308.09975-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2308.09975)[![github](https://img.shields.io/github/stars/SUFE-AIFLM-Lab/FinEval.svg?style=social)](https://github.com/SUFE-AIFLM-Lab/FinEval)![huggingface](https://img.shields.io/badge/🤗-None-yellow.svg) | FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models |
-| 2023-06 | Pixiu Finma | Xie Q, Han W, Zhang X, et al.  | The FinAI & ChanceFocus Co. & Wuhan University, China<br/>(武汉大学等) | [![arXiv](https://img.shields.io/badge/Arxiv-2306.05443-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2306.05443)[![github](https://img.shields.io/github/stars/The-FinAI/PIXIU.svg?style=social)](https://github.com/The-FinAI/PIXIU)[![huggingface](https://img.shields.io/badge/🤗-Model%207B-yellow.svg)](https://huggingface.co/ChanceFocus/finma-7b-full) | Pixiu: A large language model, instruction data and evaluation benchmark for finance | 
-| 2023-06 | FinGPT | Yang H, Liu X Y, Wang C D. | AI4Finance-Foundation | [![arXiv](https://img.shields.io/badge/Arxiv-2306.06031-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2306.06031)[![github](https://img.shields.io/github/stars/AI4Finance-Foundation/FinGPT.svg?style=social)](https://github.com/AI4Finance-Foundation/FinGPT)[![huggingface](https://img.shields.io/badge/🤗-Model%207B%20lora-yellow.svg)](https://huggingface.co/FinGPT/fingpt-mt_llama2-7b_lora) | Fingpt: Open-source financial large language models |
-| 2023-02 | BBT-Benchmark | Dakuan Lu, Hengkui Wu, et al. | Shanghai Key Laboratory of Data Science | [![arXiv](https://img.shields.io/badge/Arxiv-2302.09432-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2302.09432)[![github](https://img.shields.io/github/stars/ssymmetry/BBT-FinCUGE-Applications.svg?style=social)](https://github.com/ssymmetry/BBT-FinCUGE-Applications)![huggingface](https://img.shields.io/badge/🤗-None-yellow.svg) | BBT-Fin: Comprehensive Construction of Chinese Financial Domain Pre-trained Language Model, Corpus and Benchmark |
-| 2024 | IDEA-FinLLM | coming soon | coming soon | coming soon | coming soon |
-
-The paper shows the evaluation of the diversity, systematicness and LLM adaptability of each open source benchmark.
-
-![benchmark_info](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/benchmark_info.png)
-
-By collecting and selecting representative task datasets, we built our own Chinese-English bilingual Touchstone Benchmark, which includes 22 datasets
-
-![golden_touchstone_info](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/golden_touchstone_info.png)
-
-We extensively evaluated GPT-4o, llama3, qwen2, fingpt and our own trained Touchstone-GPT, analyzed the advantages and disadvantages of these models, and provided direction for subsequent research on financial large language models
-
-![evaluation](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/evaluation.png)
-
-## Evaluation
-### Quick Inference Use
 Our inference is based on the llama-factory framework, and eval_benchmark.sh is our reasoning script. Register the template and dataset in llama-factory, and download the specified open source model before you can use it.
 
 ```code
@@ -60,3 +52,72 @@ After specifying these three address variables, use
 python evaluate_all.py
 ```
 to find all the evaluation results in the output_dir
+
+
+## Introduction
+
+The paper shows the evaluation of the diversity, systematicness and LLM adaptability of each open source benchmark.
+
+![benchmark_info](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/benchmark_info.png?raw=true)
+
+By collecting and selecting representative task datasets, we built our own Chinese-English bilingual Touchstone Benchmark, which includes 22 datasets
+
+![golden_touchstone_info](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/golden_touchstone_info.png?raw=true)
+
+We extensively evaluated GPT-4o, llama3, qwen2, fingpt and our own trained Touchstone-GPT, analyzed the advantages and disadvantages of these models, and provided direction for subsequent research on financial large language models
+
+![evaluation](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/evaluation.png?raw=true)
+
+
+## Usage of Touchstone-GPT
+
+Here provides a code snippet with `apply_chat_template` to show you how to load the tokenizer and model and how to generate contents.
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+device = "cuda" # the device to load the model onto
+
+model = AutoModelForCausalLM.from_pretrained(
+    "IDEA-FinAI/TouchstoneGPT-7B-Instruct",
+    torch_dtype="auto",
+    device_map="auto"
+)
+tokenizer = AutoTokenizer.from_pretrained("IDEA-FinAI/TouchstoneGPT-7B-Instruct")
+
+prompt = "What is the sentiment of the following financial post: Positive, Negative, or Neutral?\nsees #Apple at $150/share in a year (+36% from today) on growing services business."
+messages = [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": prompt}
+]
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True
+)
+model_inputs = tokenizer([text], return_tensors="pt").to(device)
+
+generated_ids = model.generate(
+    model_inputs.input_ids,
+    max_new_tokens=512
+)
+generated_ids = [
+    output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+]
+
+response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+```
+
+
+
+## Citation
+```
+@misc{wu2024goldentouchstonecomprehensivebilingual,
+      title={Golden Touchstone: A Comprehensive Bilingual Benchmark for Evaluating Financial Large Language Models}, 
+      author={Xiaojun Wu and Junxi Liu and Huanyi Su and Zhouchi Lin and Yiyan Qi and Chengjin Xu and Jiajun Su and Jiajie Zhong and Fuwei Wang and Saizhuo Wang and Fengrui Hua and Jia Li and Jian Guo},
+      year={2024},
+      eprint={2411.06272},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.06272}, 
+}
+```
