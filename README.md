@@ -3,7 +3,7 @@
 <!-- markdownlint-disable no-duplicate-header -->
 
 <div align="center">
-  <img src="https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/Touchstone-GPT-logo.png?raw=true" width="15%" alt="Golden-Touchstone" />
+  <img src="https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/assets/Touchstone-GPT-logo.png?raw=true" width="15%" alt="Golden-Touchstone" />
   <h1 style="display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 2em; font-weight: bold;">Golden-Touchstone Benchmark</h1>
 </div>
 
@@ -32,6 +32,7 @@ Golden Touchstone is a simple, effective, and systematic benchmark for bilingual
 Our inference is based on the llama-factory framework, and eval_benchmark.sh is our reasoning script. Register the template and dataset in llama-factory, and download the specified open source model before you can use it.
 
 ```code
+cd eval_benchmark/
 bash eval_benchmark.sh
 ```
 
@@ -49,6 +50,7 @@ __output_dir__ indicates the path of all the data set task results you want to o
 
 After specifying these three address variables, use
 ```python
+cd eval_benchmark/
 python evaluate_all.py
 ```
 to find all the evaluation results in the output_dir
@@ -62,11 +64,11 @@ The paper shows the evaluation of the diversity, systematicness and LLM adaptabi
 
 By collecting and selecting representative task datasets, we built our own Chinese-English bilingual Touchstone Benchmark, which includes 22 datasets
 
-![golden_touchstone_info](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/golden_touchstone_info.png?raw=true)
+![golden_touchstone_info](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/assets/golden_touchstone_info.png?raw=true)
 
 We extensively evaluated GPT-4o, llama3, qwen2, fingpt and our own trained Touchstone-GPT, analyzed the advantages and disadvantages of these models, and provided direction for subsequent research on financial large language models
 
-![evaluation](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/evaluation.png?raw=true)
+![evaluation](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/assets/evaluation.png?raw=true)
 
 
 ## Usage of Touchstone-GPT

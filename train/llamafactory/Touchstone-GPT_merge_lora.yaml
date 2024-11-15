@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: IDEA-FinAI/TouchstoneGPT-7B-Instruct
+adapter_name_or_path: Touchstone-GPT-lora-sft
+template: qwen
+finetuning_type: lora
+
+### export
+export_dir: models/Touchstone-GPT--sft-lora-merged
+export_size: 2
+export_device: cpu
+export_legacy_format: false
