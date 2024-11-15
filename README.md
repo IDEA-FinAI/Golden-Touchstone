@@ -60,7 +60,7 @@ to find all the evaluation results in the output_dir
 
 The paper shows the evaluation of the diversity, systematicness and LLM adaptability of each open source benchmark.
 
-![benchmark_info](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/benchmark_info.png?raw=true)
+![benchmark_info](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/assets/benchmark_info.png?raw=true)
 
 By collecting and selecting representative task datasets, we built our own Chinese-English bilingual Touchstone Benchmark, which includes 22 datasets
 
