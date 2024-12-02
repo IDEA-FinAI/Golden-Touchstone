@@ -71,6 +71,7 @@ We extensively evaluated GPT-4o, llama3, qwen2, fingpt and our own trained Touch
 ![evaluation](https://github.com/IDEA-FinAI/Golden-Touchstone/blob/main/assets/evaluation.png?raw=true)
 
 
+
 ## Usage of Touchstone-GPT
 
 Here provides a code snippet with `apply_chat_template` to show you how to load the tokenizer and model and how to generate contents.
