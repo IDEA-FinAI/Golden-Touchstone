@@ -220,9 +220,10 @@ class classify_en_eval:
                              'flare-fomc':self.preprocess_output_fomc,
                              'CFA-multiple_choice':self.preprocess_output_choice,
                              'DJIA_stock_prediction': self.preprocess_output_stock,
-                             'cra-lendingclub':self.preprocess_output_credit
+                             'cra-lendingclub':self.preprocess_output_credit,
+                             'CMIN-US':self.preprocess_output_stock
                              }
-        self.stock_dict = {'rise':1,'decrease':0}
+        self.stock_dict = {'rise':"1",'decrease':"0"}
         self.task_label_enable = {
                                 'flare-fpb':["positive","negative","neutral"],
                                 'fiqasa':["positive","negative","neutral"],
@@ -230,7 +231,8 @@ class classify_en_eval:
                                 'flare-fomc':["hawkish","dovish","neutral"],
                                 'CFA-multiple_choice':["a","b","c","d"],
                                 'DJIA_stock_prediction':["0","1"],
-                                'cra-lendingclub':["good","bad"]
+                                'cra-lendingclub':["good","bad"],
+                                'CMIN-US':["0","1"]
                              }
     def preprocess_output_sentiment(self,output):
         output = output.strip().lower()
@@ -422,12 +424,14 @@ class classify_cn_eval:
         self.tasks_enable = {'stockA_prediction':self.preprocess_output_stock,
                              'finfe':self.preprocess_output_finfe_cn,
                              'Fineval-multiple_choice':self.preprocess_output_choice,
-                             'CPA':self.preprocess_output_choice
+                             'CPA':self.preprocess_output_choice,
+                             'CMIN-CN':self.preprocess_output_stock
                              }
         self.task_label_enable = {'stockA_prediction':["0","1"],
                                 'finfe':["0","1","2"],
                                 'Fineval-multiple_choice':["a","b","c","d"],
-                                'CPA':["a","b","c","d"]
+                                'CPA':["a","b","c","d"],
+                                'CMIN-CN':["0","1"]
                              }
 
 
@@ -538,6 +542,7 @@ class_enabel = {
     'finnl':QA_cn_eval,
     'finese':QA_cn_eval,
     'fincqa':QA_cn_eval,
+    'CMIN-CN':classify_cn_eval,
 
 
     'flare-edtsum':Summary_eval,
@@ -551,7 +556,8 @@ class_enabel = {
     'flare-ner':Ner_en_eval,
     'flare-convfinqa':QA_en_eval,
     'flare-finqa':QA_en_eval,
-    'fingpt-finred':RE_en_eval                   
+    'fingpt-finred':RE_en_eval,
+    'CMIN-US':classify_en_eval
 }
 count = 0
 result = 0

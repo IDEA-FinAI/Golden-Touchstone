@@ -34,6 +34,7 @@ datasets=(
     finese
     fincqa
     CPA
+    CMIN-CN-Windows-test
     ################
     English benchmark
     flare-edtsum
@@ -48,6 +49,7 @@ datasets=(
     flare-convfinqa
     flare-finqa
     fingpt-finred
+    CMIN-CN-Windows-stock-test
 )
 
 # 输出目录基础路径
